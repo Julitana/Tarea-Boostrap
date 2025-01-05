@@ -16,6 +16,7 @@
 <body>
 
     <!-- Inicio del navbar -->
+<nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">    
     <nav class="navbar navbar-expand-sm navbar-light bg-light">
         <a class="navbar-brand" href="#">Mi sitio web</a>
         <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
@@ -55,7 +56,7 @@
             </form>
         </div>
     </nav>
-
+</nav>
     <!-- fin del navbar  -->
 
     <!-- Inicio del Header -->
@@ -100,36 +101,67 @@
 
                 <!-- Inicio del Contenedor 1 -->
                 <div class="container">
-                    <div class="row">
-                        <div class="col-md-6 mt-4 mb-4">
-                            <div class="card" style="width: 30rem;">
-                                <img src="/400x250.png" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">Titulo tarjeta 1 </h5>
-                                    <p class="card-text">Descripcion breve de la tarjea</p>
-                                    <a href="#" class="btn btn-primary">Ver más </a>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Introduce tu nombre ">
+                      </div>
 
-                        <div class="col-md-6 mt-4 mb-4">
-                            <div class="card" style="width: 30rem;">
-                                <img src="/400x250.png" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">Titulo tarjeta 2 </h5>
-                                    <p class="card-text">Descripcion breve de la tarjea</p>
-                                    <a href="#" class="btn btn-primary">Ver más </a>
-                                </div>
+                      <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Correo Electrónico</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Introduce tu correo">
+                      </div>
 
-                            </div>
+                      <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Teléfono</label>
+                        <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="Introduce tu teléfono">
+                      </div>
 
-                        </div>
+                      <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                      </div>
 
-                    </div>
+                      <div class="col-auto">
+                        <button type="submit" class="btn btn-primary mb-3">Enviar</button>
+                      </div>
+
+                </div>
                     <!-- fin del contenedor 1   -->
 
             </section>
             <!-- fin del Section1   -->
+
+             <!-- Inicio del Section 2 --> 
+              <section>
+                <table class="table table-striped-columns table-bordered table-hover ">
+                    <thead>
+                      <tr>
+                        <th scope="col">Nombre</th>
+                        <th scope="col">Correo Eletrónico</th>
+                        <th scope="col">Telefono</th>
+                        <th scope="col">Mensaje</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>Juan Perez </td>
+                        <td>juanexample.com</td>
+                        <td>555-1234</td>
+                        <td>Consulta sobre el producto</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>Ana Garcia</td>
+                        <td>ana@example.com</td>
+                        <td>555-5678</td>
+                        <td>Soporte técnico</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                 
+              </section>
+              <!-- Inicio del Section 2 --> 
 
         </main>
         <!-- fin del main  -->
@@ -138,11 +170,43 @@
 
 
     <!-- Inicio del Footer 100% -->
-     <footer>
-        <div class="col-md-12">
-            <p class="text-muted"> Derechos reservados 2024</p>
-            </div>
-     </footer>
+    <!-- Inicio del Footer 100% -->
+    <footer id="Footer"class="text-center">
+        <!-- Inicio: footer-informacion    -->
+       <div class="container">
+         <div class="row">
+
+           <!-- Inicio: Contenedor 1 5 columnas  -->  
+           <div class="col-md-5 col-sm-6">
+             <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, quasi minus numquam saepe, dolorem quis iure quam nulla repudiandae ratione necessitatibus quibusdam. Alias debitis adipisci earum incidunt expedita, quasi hic?</p>
+          <!-- Fin: Contenedor 1 -->
+           </div>
+          
+          <!-- Inicio: Contenedor 2 5 columnas  -->
+           <div class="col-md-5 col-sm-6"> 
+           <!-- Fin: Contenedor 2 -->
+           </div>
+
+          <!-- Inicio: Contenedor 3 2 columnas  -->
+           <div class="col-md-2 col-sm-6">
+             <i class="fab fa-facebook-f"></i>
+             <i class="fab fa-instagram"></i>
+             <i class="fab fa-twitter"></i>
+             <i class="fab fa-youtube"></i>
+            <!-- Fin: Contenedor 3 -->
+           </div>
+
+         </div>
+
+       </div>
+       
+       <div class="col-md-12">
+       <p class="text-muted"> derechos reservados 2024</p>
+       </div>
+      
+     </footer>                         
+       <!-- Fin: footer-mensaje -->
+
     <!-- fin del Footer 100%   -->
 
 

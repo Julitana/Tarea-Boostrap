@@ -1,13 +1,31 @@
-
-
+:root{
+    --fondogradiante: linear-gradient(to bottom, #001e89e5, #418da0);
+    --TextClaro: white;
+    --iconazul: #001e89e5;
+}
+navbar-brand{
+    background: black;
+}
 
 main{
   height: auto !important;
   height: 100%;
   min-height: 80vh;
 }
+header .container .jumbotron{
+    background: var(--fondogradiante);
+    color: var(--TextClaro);
+    text-align: center;
+}
+
 
 footer{
     background: rgba(0, 0, 0, 0.815);
+    padding: 15px;
+    text-align: center;
+   
+}
 
+.iconos i{
+    color: var(--iconazul);
 }
